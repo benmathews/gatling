@@ -3,7 +3,7 @@
 # Documentation: https://gatling.io/docs/3.2/
 # Cheat sheet: https://gatling.io/docs/3.2/cheat-sheet/
 
-FROM openjdk:8-jdk-alpine
+FROM openjdk:17-jdk-alpine
 
 MAINTAINER Denis Vazhenin <denis.vazhenin@me.com>
 
@@ -11,7 +11,7 @@ MAINTAINER Denis Vazhenin <denis.vazhenin@me.com>
 WORKDIR /opt
 
 # gating version
-ENV GATLING_VERSION 3.5.0
+ENV GATLING_VERSION 3.5.1
 
 # create directory for gatling install
 RUN mkdir -p gatling
